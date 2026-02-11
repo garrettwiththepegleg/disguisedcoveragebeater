@@ -383,7 +383,7 @@ def loadMaps():
             for key in visited[i].keys():
                 if abs(key-time) <= 100:
                     colorval+=visited[i][key]
-            temp_dict[time][i] = (min(255,int(colorval*3/summation*255)),0,0)
+            temp_dict[time][i] = (min(255,int(colorval*3.5/summation*255)),0,0)
         time += 100
     return temp_dict
 
